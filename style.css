@@ -1,93 +1,99 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Gelasio", serif;
-  text-decoration: none;
-  list-style: none;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Gelasio", serif;
+	text-decoration: none;
+	list-style: none;
 }
+
 /* -----------------------colors---------------------------- */
 :root {
-  --text_color: rgb(70, 164, 232);
-  --nav_text_color: rgba(8, 31, 50, 1);
+	--text_color: rgb(70, 164, 232);
+	--nav_text_color: rgba(8, 31, 50, 1);
 }
+
 /* -----------------------colors---------------------------- */
 
 /* ---------------Main Start----------------- */
 
 main {
-  background-image: url(./images/420903685.jpg);
-  background-size: cover;
-  background-position: center center;
-  height: 100%;
+	background-image: url(./images/420903685.jpg);
+	background-size: cover;
+	background-position: center center;
+	height: 100%;
 }
+
 main .logo {
-  padding: 10px;
+	padding: 10px;
 }
+
 .fon {
-  background-color: aliceblue;
-  opacity: 0.9;
-  height: 100%;
+	background-color: aliceblue;
+	opacity: 0.9;
+	height: 100%;
 }
+
 /* ---------------Main End----------------- */
 
 /* ---------------Header  Start---------------*/
 header {
-  height: 100px;
-  padding-top: 30px;
+	height: 100px;
+	padding-top: 30px;
 }
 
 .header_container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 80%;
-  margin: 10px auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 80%;
+	margin: 10px auto;
 }
 
 .header_container .navbar .menu {
-  display: flex;
+	display: flex;
 }
 
 .header_container .navbar .menu li {
-  padding-left: 30px;
+	padding-left: 30px;
 }
 
 .header_container .navbar .menu li:hover a {
-  color: var(--text_color);
-  transition: 0.5s ease-out;
+	color: var(--text_color);
+	transition: 0.5s ease-out;
 }
+
 .header_container .navbar .menu li a {
-  color: var(--nav_text_color);
-  font-weight: 500;
-  font-family: "Roboto", sans-serif;
+	color: var(--nav_text_color);
+	font-weight: 500;
+	font-family: "Roboto", sans-serif;
 }
 
 .header_container .navbar .menu .active {
-  color: var(--text_color);
+	color: var(--text_color);
 }
 
 .booking_button {
-  background-color: var(--text_color);
-  display: inline-block;
-  height: 50px;
-  width: 150px;
-  border: none;
-  border-radius: 5px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  transition: 1s;
+	background-color: var(--text_color);
+	display: inline-block;
+	height: 50px;
+	width: 150px;
+	border: none;
+	border-radius: 5px;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	transition: 1s;
 }
 
 .booking_button:hover {
-  transform: scale(1.1);
+	transform: scale(1.1);
 }
 
 .booking_button a {
-  color: white;
-  font-family: "Roboto", sans-serif;
-  width: 100%;
-  display: inline-block;
-  line-height: 50px;
+	color: white;
+	font-family: "Roboto", sans-serif;
+	width: 100%;
+	display: inline-block;
+	line-height: 50px;
 }
 
 /* ---------------Header  End----------------- */
@@ -95,73 +101,85 @@ header {
 /* ---------------under_header_container start----------------- */
 
 .under_header_container {
-  width: 80%;
-  margin: 80px auto;
+	width: 80%;
+	margin: 80px auto;
 }
+
 .text_content {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
 }
 
 .text_content h1 {
-  color: var(--nav_text_color);
-  font-weight: 600;
-  font-family: "Roboto", sans-serif;
-  padding: 5px;
+	color: var(--nav_text_color);
+	font-weight: 600;
+	font-family: "Roboto", sans-serif;
+	padding: 5px;
 }
+
 .text_content h2 {
-  font-weight: 400;
-  font-family: "Roboto", sans-serif;
-  padding: 5px;
+	font-weight: 400;
+	font-family: "Roboto", sans-serif;
+	padding: 5px;
 }
 
 /* ---------------under_header_container end----------------- */
 
 
 /*----------------information_block Start------------------*/
-
-
-.information_block  {
-    text-align: center;
-   
+h4 {
+	margin-bottom: 20px;
 }
+
+.information_block {
+	text-align: center;
+
+}
+
 .cards_icon {
-    display: grid;
-    grid-template-columns: repeat(4,150px);
-    justify-content: center;
-    gap: 15px;
-    text-align: center;
-    width: 80%;
-    margin: 10px auto;
-   
-   
-   
-}
+	display: grid;
+	grid-template-columns: repeat(4, 250px);
+	justify-content: center;
+	gap: 15px;
+	text-align: center;
+	width: 80%;
+	margin: 10px auto;
 
-.cards_icon p, h3 {
-    font-family: "Roboto", sans-serif;
-    font-size: small;
-    padding: 5px 0 5px 0;
-    
+
 
 }
+
+.cards_icon p,
+h3 {
+	font-family: "Roboto", sans-serif;
+	font-size: medium;
+	padding: 5px 0 5px 0;
+
+
+}
+
 .cards_icon p {
-    font-size: 12px;
-}
-.cards_icon h3 {
-    font-weight: 700;
-   
+	font-size: 13px;
+
 }
 
-.information_block :nth-child(1),:nth-child(2){
-    font-family: "Roboto", sans-serif;
+.cards_icon h3 {
+	font-weight: 700;
+
+}
+
+.information_block :nth-child(1),
+:nth-child(2) {
+	font-family: "Roboto", sans-serif;
 }
 
 .allcards {
-    border: 1px solid gray;
-    border-radius: 5px;
-    padding: 8px 7px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    
+	margin-top: 15px;
+	border: 1px solid gray;
+	border-radius: 5px;
+	padding: 8px 7px;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	justify-items: stretch;
+
 }
